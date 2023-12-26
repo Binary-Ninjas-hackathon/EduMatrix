@@ -1,0 +1,66 @@
+/* Navbar.css */
+
+.navbar {
+    margin: 0;
+    display: flex;
+    font-family: 'Inria Serif';
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem;
+    padding-left: 3rem;
+    height: var(--navbar-height);
+    background-color:#CF0A0A;
+    color: white; /* Set text color to white */
+  }
+  
+  .logo a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .menu a {
+    font-size: 20px;
+    font-weight: semi-bold;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    margin: 0 1rem;
+    
+  }
+
+  a:hover { text-shadow: 0 0 5px #000000; }
+  
+  .toggle-button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* Hide by default on larger screens */
+  }
+  
+  @media (max-width: 850px) {
+    .menu {
+      display: none; /* Hide on larger screens */
+      flex-direction: column;
+      position: absolute;
+      top: 3.8rem;
+      left: 0;
+      width: 100%;
+      background-color:#CF0A0A;
+      text-align: center;
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  
+    .toggle-button {
+      display: block; /* Show on smaller screens */
+    }
+  }
+  
