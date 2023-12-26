@@ -10,7 +10,9 @@
     padding-left: 3rem;
     height: var(--navbar-height);
     background-color:#FF7A00;
-    color: white; /* Set text color to white */
+    color: white; 
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
   }
   
   .logo a {
